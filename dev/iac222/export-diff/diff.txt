@@ -1,0 +1,27 @@
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  ~ update in-place
+
+Terraform will perform the following actions:
+
+  # module.base.module.hci0-aksarc0.azapi_resource.connectedCluster will be updated in-place
+  ~ resource "azapi_resource" "connectedCluster" {
+      ~ body                      = {
+          ~ properties = {
+              - arcAgentProfile           = {
+                  - agentAutoUpgrade = "Enabled"
+                }
+                # (7 unchanged attributes hidden)
+            }
+            # (1 unchanged attribute hidden)
+        }
+        id                        = "/subscriptions/de3c4d5e-af08-451a-a873-438d86ab6f4b/resourceGroups/iac222-rg/providers/Microsoft.Kubernetes/connectedClusters/iac222-aksArc"
+        name                      = "iac222-aksArc"
+      ~ output                    = {} -> (known after apply)
+        # (7 unchanged attributes hidden)
+
+        # (1 unchanged block hidden)
+    }
+
+Plan: 0 to add, 1 to change, 0 to destroy.
